@@ -5,10 +5,10 @@ RF Online GameCP UI Prototype is a frontend concept for a Game Control Panel des
 
 # 🚀 Features
 - Clean and responsive user interface with Tailwind CSS
-- Account Registration
-- Login
-- Password Recovery
-- FireGuard Retrieval
+- Account Registration Form
+- Login Form
+- Password Recovery Form
+- FireGuard Retrieval Form
 
 # 🛠️ Tech Stack
 - HTML
