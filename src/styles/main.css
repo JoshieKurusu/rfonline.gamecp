@@ -29,7 +29,7 @@
 
 .section {
   width: 100vw;
-  background: url("../src/assets/images/rf-online-bg-5.jpg") no-repeat top/cover fixed;
+  background: url("./src/assets/images/rf-online-bg-5.jpg") no-repeat top/cover fixed;
   position: relative;
   height: 100vh;
 }
