@@ -1,0 +1,635 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: 255, 255, 255;
+  --color-2: 0, 0, 0;
+  --color-3: 52, 152, 219;
+  --color-4: 35, 132, 198;
+  --color-5: 0, 188, 140;
+  --color-6: 0, 112, 83;
+  --color-7: 232, 62, 140;
+  --color-8: 73, 80, 87;
+  --color-9: 68, 68, 68;
+  --color-10: 173, 181, 189;
+  --color-11: 243, 156, 18;
+  --color-12: 212, 134, 11;
+  --color-13: 231, 76, 60;
+  --color-14: 225, 46, 28;
+  --color-15: 0, 123, 255;
+  --color-16: 29, 147, 210;
+  --color-17: 255, 42, 104;
+  --color-18: 255, 94, 58;
+  --color-19: 40, 167, 69;
+  --color-20: 132, 180, 45;
+}
+
+.section {
+  width: 100vw;
+  background: url("/src/assets/images/rf-online-bg-5.jpg") no-repeat top/cover fixed;
+  position: relative;
+  height: 100vh;
+}
+.section .container {
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.section .container .card {
+  padding: 20px;
+  background: transparent;
+  border: solid 1px rgba(var(--color-2), 0.5);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+.section .container .card .logo {
+  margin-bottom: 16px;
+}
+.section .container .card .logo img {
+  width: 100%;
+  height: 100%;
+}
+.section .container .card .heading {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 24px;
+  color: rgb(var(--color-1));
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  border-bottom: solid 4px rgb(var(--color-13));
+}
+@media (min-width: 500px) {
+  .section .container .card .heading {
+    font-size: 32px;
+  }
+}
+.section .container .card .instruction {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: rgb(var(--color-1));
+  background-color: rgb(var(--color-5));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+@media (min-width: 500px) {
+  .section .container .card .instruction {
+    font-size: 16px;
+  }
+}
+.section .container .card .card-body {
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.section .container .card .card-body .login .login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section .container .card .card-body .login .login-form .form-floating-group {
+  position: relative;
+}
+.section .container .card .card-body .login .login-form .form-floating-group .form-control {
+  height: 40px;
+  margin: 0 0 16px;
+  padding: 8px 12px;
+  border: solid 1px rgb(var(--color-2));
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.section .container .card .card-body .login .login-form .form-floating-group .form-control:focus {
+  box-shadow: none;
+}
+.section .container .card .card-body .login .login-form .form-floating-group .form-control:focus ~ .form-label {
+  top: -14px;
+  font-weight: 600;
+  color: rgb(var(--color-2));
+  background: linear-gradient(to bottom, rgba(var(--color-1), 0) 59%, rgb(var(--color-1)) 41%);
+}
+.section .container .card .card-body .login .login-form .form-floating-group .form-label {
+  margin: 0;
+  padding: 0 6px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  z-index: 2;
+  color: rgb(var(--color-8));
+  background-color: transparent;
+  cursor: text;
+  transition: top 0.2s ease-in-out;
+  -webkit-transition: top 0.2s ease-in-out;
+  -moz-transition: top 0.2s ease-in-out;
+  -ms-transition: top 0.2s ease-in-out;
+  -o-transition: top 0.2s ease-in-out;
+}
+.section .container .card .card-body .login .login-form .form-floating-group .active-form-label {
+  top: -14px;
+  font-weight: 600;
+  color: rgb(var(--color-2));
+  background: linear-gradient(to bottom, rgba(var(--color-1), 0) 59%, rgb(var(--color-1)) 41%);
+}
+.section .container .card .card-body .login .login-form .server-label {
+  background: rgb(var(--color-1));
+  height: 40px;
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  border: solid 1px rgb(var(--color-2));
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.section .container .card .card-body .login .login-form .buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.section .container .card .card-body .login .login-form .buttons .login-btn, .section .container .card .card-body .login .login-form .buttons .register-btn {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.section .container .card .card-body .login .login-form .buttons .login-btn {
+  width: 100%;
+  max-width: 295px;
+  margin-right: 10px;
+  color: rgb(var(--color-1));
+  background-color: rgb(var(--color-3));
+}
+.section .container .card .card-body .login .login-form .buttons .login-btn svg {
+  width: 16px;
+  height: 16px;
+  margin-top: -3px;
+  color: rgb(var(--color-1));
+}
+.section .container .card .card-body .login .login-form .buttons .login-btn:hover {
+  background-color: rgb(var(--color-4));
+}
+.section .container .card .card-body .login .login-form .buttons .register-btn {
+  width: 70%;
+  max-width: 132px;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(var(--color-5));
+  border: solid 1px rgb(var(--color-5));
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.section .container .card .card-body .login .login-form .buttons .register-btn svg {
+  width: 18px;
+  height: 18px;
+  margin-top: -5px;
+  color: rgb(var(--color-5));
+}
+.section .container .card .card-body .login .login-form .buttons .register-btn:hover {
+  color: rgb(var(--color-1));
+  background-color: rgb(var(--color-5));
+}
+.section .container .card .card-body .login .login-form .buttons .register-btn:hover svg {
+  color: rgb(var(--color-1));
+}
+.section .container .card .card-body .login .recovery-btns {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.section .container .card .card-body .login .recovery-btns .recover-password, .section .container .card .card-body .login .recovery-btns .recover-fireguard {
+  width: 148px;
+  padding: 0;
+  color: rgb(var(--color-5));
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+}
+.section .container .card .card-body .login .recovery-btns .recover-password svg, .section .container .card .card-body .login .recovery-btns .recover-fireguard svg {
+  width: 12px;
+  height: 14px;
+  margin-top: -3px;
+  color: rgb(var(--color-5));
+}
+.section .container .card .card-body .login .recovery-btns .recover-password:hover, .section .container .card .card-body .login .recovery-btns .recover-fireguard:hover {
+  color: rgb(var(--color-6));
+}
+.section .container .card .card-body .login .recovery-btns .recover-password:hover svg, .section .container .card .card-body .login .recovery-btns .recover-fireguard:hover svg {
+  color: rgb(var(--color-6));
+}
+.section .container .card .card-body .registration .registration-form {
+  display: flex;
+  gap: 8px 17px;
+  flex-wrap: wrap;
+}
+.section .container .card .card-body .registration .registration-form .form-group {
+  width: 100%;
+}
+.section .container .card .card-body .registration .registration-form .form-group label {
+  margin-bottom: 4px;
+  color: rgb(var(--color-1));
+}
+@media (min-width: 500px) {
+  .section .container .card .card-body .registration .registration-form .form-group label {
+    margin-bottom: 8px;
+  }
+}
+.section .container .card .card-body .registration .registration-form .form-group .input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: solid 1px rgb(var(--color-2));
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.section .container .card .card-body .registration .registration-form .form-group .input-group .input-group-svg {
+  padding: 7px 11px;
+  background-color: rgb(var(--color-9));
+}
+.section .container .card .card-body .registration .registration-form .form-group .input-group .input-group-svg svg {
+  width: 16px;
+  height: 16px;
+  color: rgb(var(--color-10));
+}
+.section .container .card .card-body .registration .registration-form .form-group .input-group .form-control {
+  margin: 0;
+}
+.section .container .card .card-body .registration .registration-form .form-group .input-group .form-control:focus {
+  box-shadow: none;
+}
+.section .container .card .card-body .registration .registration-form .password-from-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px 17px;
+}
+.section .container .card .card-body .registration .registration-form .password-from-div .form-group {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .section .container .card .card-body .registration .registration-form .password-from-div .form-group {
+    width: 48%;
+  }
+}
+@media (min-width: 500px) {
+  .section .container .card .card-body .registration .registration-form {
+    gap: 16px 17px;
+  }
+}
+.section .container .card .card-body .registration .terms {
+  width: 100%;
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  color: rgb(var(--color-1));
+}
+.section .container .card .card-body .registration .terms span {
+  color: rgb(var(--color-5));
+}
+@media (min-width: 500px) {
+  .section .container .card .card-body .registration .terms {
+    margin-top: 12px;
+    font-size: 15px;
+  }
+}
+.section .container .card .card-body .registration .buttons {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.section .container .card .card-body .registration .buttons .registration-btn, .section .container .card .card-body .registration .buttons .back-btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  color: rgb(var(--color-1));
+  font-size: 15px;
+  line-height: 1.5;
+}
+.section .container .card .card-body .registration .buttons .registration-btn svg, .section .container .card .card-body .registration .buttons .back-btn svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+.section .container .card .card-body .registration .buttons .registration-btn {
+  background-color: rgb(var(--color-5));
+}
+.section .container .card .card-body .registration .buttons .registration-btn:hover {
+  background-color: rgb(var(--color-6));
+}
+.section .container .card .card-body .registration .buttons .back-btn {
+  padding: 6px 12px;
+  background-color: rgb(var(--color-13));
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.section .container .card .card-body .registration .buttons .back-btn:hover {
+  background-color: rgb(var(--color-14));
+}
+.section .container .card .card-body .password-recovery .password-recovery-form {
+  display: flex;
+  gap: 16px 17px;
+  flex-wrap: wrap;
+}
+.section .container .card .card-body .password-recovery .password-recovery-form .form-group {
+  width: 100%;
+}
+.section .container .card .card-body .password-recovery .password-recovery-form .form-group label {
+  margin-bottom: 4px;
+  color: rgb(var(--color-1));
+}
+@media (min-width: 500px) {
+  .section .container .card .card-body .password-recovery .password-recovery-form .form-group label {
+    margin-bottom: 8px;
+  }
+}
+.section .container .card .card-body .password-recovery .password-recovery-form .form-group .input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: solid 1px rgb(var(--color-2));
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.section .container .card .card-body .password-recovery .password-recovery-form .form-group .input-group .input-group-svg {
+  padding: 7px 11px;
+  background-color: rgb(var(--color-9));
+}
+.section .container .card .card-body .password-recovery .password-recovery-form .form-group .input-group .input-group-svg svg {
+  width: 16px;
+  height: 16px;
+  color: rgb(var(--color-10));
+}
+.section .container .card .card-body .password-recovery .password-recovery-form .form-group .input-group .form-control {
+  margin: 0;
+}
+.section .container .card .card-body .password-recovery .password-recovery-form .form-group .input-group .form-control:focus {
+  box-shadow: none;
+}
+.section .container .card .card-body .password-recovery .password-recovery-form > :nth-child(2), .section .container .card .card-body .password-recovery .password-recovery-form > :nth-child(3) {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .section .container .card .card-body .password-recovery .password-recovery-form > :nth-child(2), .section .container .card .card-body .password-recovery .password-recovery-form > :nth-child(3) {
+    width: 48%;
+  }
+}
+.section .container .card .card-body .password-recovery .buttons {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+.section .container .card .card-body .password-recovery .buttons .back-btn, .section .container .card .card-body .password-recovery .buttons .recover-button {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgb(var(--color-1));
+}
+.section .container .card .card-body .password-recovery .buttons .back-btn svg, .section .container .card .card-body .password-recovery .buttons .recover-button svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+.section .container .card .card-body .password-recovery .buttons .back-btn {
+  padding: 6px 12px;
+  background-color: rgb(var(--color-13));
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.section .container .card .card-body .password-recovery .buttons .back-btn:hover {
+  background-color: rgb(var(--color-14));
+}
+.section .container .card .card-body .password-recovery .buttons .recover-button {
+  background-color: rgb(var(--color-11));
+}
+.section .container .card .card-body .password-recovery .buttons .recover-button:hover {
+  background-color: rgb(var(--color-12));
+}
+.section .container .card .card-body .fireguard-recovery .fireguard-recovery-form {
+  display: flex;
+  gap: 16px 17px;
+  flex-wrap: wrap;
+}
+.section .container .card .card-body .fireguard-recovery .fireguard-recovery-form .form-group {
+  width: 100%;
+}
+.section .container .card .card-body .fireguard-recovery .fireguard-recovery-form .form-group label {
+  margin-bottom: 4px;
+  color: rgb(var(--color-1));
+}
+@media (min-width: 500px) {
+  .section .container .card .card-body .fireguard-recovery .fireguard-recovery-form .form-group label {
+    margin-bottom: 8px;
+  }
+}
+.section .container .card .card-body .fireguard-recovery .fireguard-recovery-form .form-group .input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: solid 1px rgb(var(--color-2));
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.section .container .card .card-body .fireguard-recovery .fireguard-recovery-form .form-group .input-group .input-group-svg {
+  padding: 7px 11px;
+  background-color: rgb(var(--color-9));
+}
+.section .container .card .card-body .fireguard-recovery .fireguard-recovery-form .form-group .input-group .input-group-svg svg {
+  width: 16px;
+  height: 16px;
+  color: rgb(var(--color-10));
+}
+.section .container .card .card-body .fireguard-recovery .fireguard-recovery-form .form-group .input-group .form-control {
+  margin: 0;
+}
+.section .container .card .card-body .fireguard-recovery .fireguard-recovery-form .form-group .input-group .form-control:focus {
+  box-shadow: none;
+}
+@media (min-width: 500px) {
+  .section .container .card .card-body .fireguard-recovery .fireguard-recovery-form .form-group {
+    width: 48%;
+  }
+}
+.section .container .card .card-body .fireguard-recovery .buttons {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.section .container .card .card-body .fireguard-recovery .buttons .back-btn, .section .container .card .card-body .fireguard-recovery .buttons .recover-button {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgb(var(--color-1));
+}
+.section .container .card .card-body .fireguard-recovery .buttons .back-btn svg, .section .container .card .card-body .fireguard-recovery .buttons .recover-button svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+.section .container .card .card-body .fireguard-recovery .buttons .back-btn {
+  padding: 6px 12px;
+  background-color: rgb(var(--color-13));
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.section .container .card .card-body .fireguard-recovery .buttons .back-btn:hover {
+  background-color: rgb(var(--color-14));
+}
+.section .container .card .card-body .fireguard-recovery .buttons .recover-button {
+  background-color: rgb(var(--color-11));
+}
+.section .container .card .card-body .fireguard-recovery .buttons .recover-button:hover {
+  background-color: rgb(var(--color-12));
+}
+.section .container h6 {
+  width: 100%;
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(var(--color-7));
+}
+.section .container h6 a {
+  text-decoration: none;
+  color: rgb(var(--color-5)) !important;
+  cursor: pointer;
+}
+.section .container h6 a:hover {
+  color: rgb(var(--color-6)) !important;
+  text-decoration: underline;
+}
+.section .toast-container {
+  width: 100%;
+  max-width: 400px;
+}
+.section .toast-container .toast {
+  width: 100%;
+  margin-bottom: 12px;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+}
+.section .toast-container .toast .toast-header {
+  padding: 0 0 0 16px;
+  background: none;
+}
+.section .toast-container .toast .toast-header svg {
+  width: 35px;
+  height: 35px;
+  color: rgb(var(--color-1));
+}
+.section .toast-container .toast .toast-body {
+  padding: 12px 16px;
+}
+.section .toast-container .toast .toast-body h6, .section .toast-container .toast .toast-body p {
+  margin: 0;
+  color: rgb(var(--color-1));
+  font-size: 15px;
+  line-height: 1.5;
+}
+.section .toast-container .toast .toast-body h6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.section .toast-container .toast .close-toast-btn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background: none;
+  color: rgba(var(--color-1), 0.5);
+}
+.section .toast-container .authenticate-toast {
+  background: linear-gradient(to bottom right, rgb(var(--color-15)), rgb(var(--color-16)));
+}
+.section .toast-container .failed-toast {
+  background: linear-gradient(to bottom right, rgb(var(--color-17)), rgb(var(--color-18)));
+}
+.section .toast-container .success-toast {
+  background: linear-gradient(to bottom right, rgb(var(--color-19)), rgb(var(--color-20)));
+}
+.section .show {
+  display: flex;
+}
+
+@media (max-height: 643px) {
+  .registration-page {
+    height: 120vh;
+  }
+}
+@media (max-height: 643px) and (min-width: 500px) {
+  .registration-page {
+    height: 110vh;
+  }
+}
+.registration-page .container .card {
+  padding: 0;
+}
+.registration-page .container .card .card-body {
+  padding: 0 20px 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
