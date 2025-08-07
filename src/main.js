@@ -4,7 +4,7 @@ const section = document.querySelector(".section");
 document.addEventListener("DOMContentLoaded", () => {
     // CHANGE THE STYLE WHEN ITS IN REGISTER PAGE
     function registerPageCSS() {
-        if (window.location.pathname === "https://joshiekurusu.github.io/rfonline.gamecp/register.html") {
+        if (window.location.pathname === "/src/pages/register.html" || "https://joshiekurusu.github.io/rfonline.gamecp/register.html") {
             section.classList.add("registration-page");
         }
     }
@@ -217,5 +217,4 @@ function handleLoginSuccess() {
     toastLoginFailed.addEventListener("hidden.bs.toast", () => {
         toastLoginFailed.remove();
     });
-
 }
