@@ -215,6 +215,7 @@
   margin-top: 8px;
   display: flex;
   flex-direction: column;
+  row-gap: 2px;
 }
 .section .container .card .card-body .login .recovery-btns .recover-password, .section .container .card .card-body .login .recovery-btns .recover-fireguard {
   width: 148px;
@@ -222,7 +223,6 @@
   color: rgb(var(--color-5));
   font-size: 15px;
   line-height: 1.5;
-  text-align: center;
 }
 .section .container .card .card-body .login .recovery-btns .recover-password svg, .section .container .card .card-body .login .recovery-btns .recover-fireguard svg {
   width: 12px;

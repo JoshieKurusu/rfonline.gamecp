@@ -208,13 +208,13 @@
                         margin-top: 8px;
                         display: flex;
                         flex-direction: column;
+                        row-gap: 2px;
                         .recover-password, .recover-fireguard {
                             width: 148px;
                             padding: 0;
                             color: rgb(var(--color-5));
                             font-size: 15px;
                             line-height: 1.5;
-                            text-align: center;
                             svg {
                                 width: 12px;
                                 height: 14px;
