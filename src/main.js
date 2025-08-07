@@ -4,8 +4,8 @@ const section = document.querySelector(".section");
 document.addEventListener("DOMContentLoaded", () => {
     // CHANGE THE STYLE WHEN ITS IN REGISTER PAGE
     function registerPageCSS() {
-        // CORRECT PATHNAME IS /rfonline.gamecp/register.html
-        if (window.location.pathname === "/register.html") {
+        // CORRECT PATHNAME IS /rfonline.gamecp/register.html AND THE STATIC IS /register.html
+        if (window.location.pathname === "/rfonline.gamecp/register.html") {
             section.classList.add("registration-page");
         }
     }
