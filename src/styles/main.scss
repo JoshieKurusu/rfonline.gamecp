@@ -599,7 +599,7 @@
 }
 .registration-page {
     @media (max-height: 643px) {
-        @include section-height(120vh);
+        @include section-height(130vh);
         @media (min-width: 500px) {
             @include section-height(110vh);
         }

@@ -617,7 +617,7 @@
 
 @media (max-height: 643px) {
   .registration-page {
-    height: 120vh;
+    height: 130vh;
   }
 }
 @media (max-height: 643px) and (min-width: 500px) {
